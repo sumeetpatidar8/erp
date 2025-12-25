@@ -71,9 +71,15 @@ erp/
 
 ## API Documentation
 
+- Swagger UI: http://localhost:8080/swagger-ui.html
+- OpenAPI JSON: http://localhost:8080/v3/api-docs
 - Health Checks: `/actuator/health`
 - Metrics: `/actuator/metrics`
-- (Future: Swagger UI at `/swagger-ui.html`)
+
+### Sample APIs
+- `POST /api/v1/companies` - Create company
+- `GET /api/v1/companies` - List companies (paginated)
+- `GET /api/v1/companies/{id}` - Get company by ID
 
 ## Testing
 

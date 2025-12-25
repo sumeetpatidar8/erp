@@ -52,15 +52,15 @@ The ERP application is a Spring Boot-based system designed for managing business
 - Custom queries and specifications for complex searches.
 
 #### 2. **Service Layer**
-- Business logic services: `CompanyService`, `UserService`, `InventoryService`, etc.
-- Transaction management.
-- Integration with utilities (e.g., date formatting, validation).
+- Basic services implemented (e.g., CompanyService with CRUD operations).
+- Transaction management added.
+- Integration with utilities (e.g., pagination).
 
 #### 3. **API Layer**
-- REST controllers: Endpoints for CRUD on entities.
-- API versioning (e.g., `/api/v1/companies`).
+- REST controllers started (e.g., CompanyController with full CRUD).
+- API versioning (`/api/v1/`).
 - Pagination and sorting in responses.
-- Swagger/OpenAPI documentation.
+- Swagger/OpenAPI documentation integrated.
 
 #### 4. **Authentication & Authorization**
 - JWT token generation/validation.
