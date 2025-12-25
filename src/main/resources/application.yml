@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: erp
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/erp
+    username: erp_user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+app:
+  security:
+    permitted-paths:
+      - /login
+      - /websocket/**
+      - /assets/**
+  websocket:
+    endpoint: /websocket
+    broker-prefixes:
+      - /topic
+      - /queue
+    app-prefix: /app
+  alerts:
+    topic-prefix: /topic/alerts.
+  pagination:
+    default-size: 20
+    max-size: 200
+    default-sort: id,desc
+  time:
+    default-zone: UTC
+
+
