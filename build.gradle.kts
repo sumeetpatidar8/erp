@@ -41,6 +41,7 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-tasks.withType<Test> {
-	useJUnitPlatform()
+tasks.withType<JavaCompile> {
+	options.compilerArgs.add("-parameters")
+	options.compilerArgs.add("-Xlint:-processing")
 }
